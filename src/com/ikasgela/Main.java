@@ -22,7 +22,7 @@ public class Main {
                 try {
                     num_tope = Integer.parseInt(entrada);
                     if (num_tope <= 1) {
-                        System.out.println("Rango de números no evaluable.");
+                        System.out.println("Rango de números no evaluable.\n");
                     } else {
                         long inicio = System.currentTimeMillis();
                         for (int i = 1; i < num_tope + 1; i++) {
@@ -40,7 +40,7 @@ public class Main {
                                 + tiempo_estimado + " Centésimas de segundo\n");
                     }
                 } catch (NumberFormatException e) {
-                    System.out.println("Error: Entrada Invalida");
+                    System.out.println("Error: Entrada Invalida\n");
                 }
             }
         } while (!entrada.equals("fin"));
